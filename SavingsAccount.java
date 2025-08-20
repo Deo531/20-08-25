@@ -31,7 +31,7 @@ public class SavingsAccount {
         if (jumlahpenarikan <= 0){
             System.out.println("Penarikan tidak boleh negatif");
         } else if (jumlahpenarikan >= 150000){
-            System.out.println("Maaf Anda Mencapai Batas Nominal Maksimal Penarikan");
+            System.out.println("Maaf Anda Mencapai Batas Nominal Maksimal Penarikan yaitu Rp 200000");
         }else if (saldo <= jumlahpenarikan) {
             System.out.println("Maaf Saldo anda tidak cukup");
             System.out.println("Saldo Anda Sekarang : Rp " + saldo);
