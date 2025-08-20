@@ -4,7 +4,7 @@ public class SavingsAccount {
     public int jumlahpenarikan;
     public double saldoSetelahPenarikan;
     public double sukubunga;
-
+    
     public void cetak(){
         System.out.println("Nama Customer : " + nama);
         System.out.println("Saldo : Rp " + saldo);
@@ -38,7 +38,7 @@ public class SavingsAccount {
         } else {
             saldoSetelahPenarikan = saldo - jumlahpenarikan;
             saldo = saldoSetelahPenarikan;
-            System.out.println("Selamat anda berhasil melakukan penarikan yaitu Rp 200000");
+            System.out.println("Selamat anda berhasil melakukan penarikan");
             System.out.println("Saldo anda sekarang : Rp" + saldoSetelahPenarikan);
         } System.out.println("----------------------");
     }
