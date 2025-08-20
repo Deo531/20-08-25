@@ -21,5 +21,15 @@ public class AccountTest {
         account2.calcInterest();
         account2.withdraw();
         
+        SavingsAccount account3 = new SavingsAccount();
+        account3.nama = "Ahmad";
+        account3.saldo = 650000.0;
+        account3.jumlahpenarikan += 220000;
+        account3.sukubunga = 0.2;
+        account3.cetak();
+        account3.deposit(40000);
+        account3.calcInterest();
+        account3.withdraw();
+        
     }
 }
