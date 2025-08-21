@@ -18,11 +18,8 @@ public class SavingsAccount {
     }
     public double calcInterest(){
         double bunga =  saldo * sukubunga / 12;
-        if (bunga <= 0){
-            System.out.println("Bunga : Tidak Valid");
-        } else {
-            System.out.println("Bunga : Per Bulan Rp " + bunga);
-        } System.out.println();
+        System.out.println("Total Bunga perbulan : Rp " + bunga);
+        System.out.println();
         return bunga;
     }
     public void withdraw() {
@@ -31,7 +28,7 @@ public class SavingsAccount {
         if (jumlahpenarikan <= 0){
             System.out.println("Penarikan tidak boleh negatif");
         } else if (jumlahpenarikan >= 150000){
-            System.out.println("Maaf Anda Mencapai Batas Nominal Maksimal Penarikan yaitu Rp 200000");
+            System.out.println("Maaf Anda Mencapai Batas Nominal Maksimal Penarikan yaitu Rp 150000");
         }else if (saldo <= jumlahpenarikan) {
             System.out.println("Maaf Saldo anda tidak cukup");
             System.out.println("Saldo Anda Sekarang : Rp " + saldo);
