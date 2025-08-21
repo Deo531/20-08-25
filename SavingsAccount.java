@@ -9,6 +9,7 @@ public class SavingsAccount {
     public void cetak(){
         System.out.println("Nama Customer           : " + nama);
         System.out.println("Saldo                   : Rp " + saldo);
+        System.out.println("Suku Bunga              : " + (sukubunga * 100) + "%");
         System.out.println();
     }
 
@@ -38,13 +39,13 @@ public class SavingsAccount {
             System.out.println("Maaf Anda Mencapai Batas Nominal Maksimal Penarikan yaitu Rp 150.000");
         }else if (saldo <= jumlahpenarikan) {
             System.out.println("Maaf Saldo anda tidak cukup");
-            System.out.println("Saldo Anda Sekarang : Rp " + saldo);
+            System.out.println("Saldo Anda Sekarang     : Rp " + saldo);
         } else {
             saldoSetelahPenarikan = saldo - jumlahpenarikan;
             saldo = saldoSetelahPenarikan;
             System.out.println("Selamat anda berhasil melakukan penarikan");
-            System.out.println("Saldo anda sekarang : Rp" + saldoSetelahPenarikan);
-        } System.out.println("----------------------");
+            System.out.println("Saldo anda sekarang     : Rp" + saldoSetelahPenarikan);
+        } System.out.println("---------------------------------");
         System.out.println();
     }
 }
